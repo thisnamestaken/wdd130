@@ -57,21 +57,21 @@ nav, p, section, article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.9; /* Modified opacity for aesthetics */
     background-color: var(--accent2-color);
     color: #fff; /* white text; modify if not enough contrast */
 }
 
 .hero article {
     position: absolute;
-    top: 300px;
+    bottom: 0px; /* modified for aesthetics */
 /*    width: 100%; */ /* Decided to modify to left / right / margin: 0, because Width: 100%; looked a little ugly */
     left: 0;
     right: 0;
     margin: 0 auto;
     padding: 16px;
     text-align: center;
-    opacity: 0.9;
+    opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff; /* white text; modify if not enough contrast */
 }
