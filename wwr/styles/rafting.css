@@ -64,7 +64,7 @@ nav, p, section, article {
 
 .hero article {
     position: absolute;
-    top: 360px; 
+    top: 343px; 
 /*    width: 100%; */ /* Decided to modify to left / right / margin: 0, because Width: 100%; looked a little ugly */
     left: 0;
     right: 0;
