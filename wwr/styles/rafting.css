@@ -59,19 +59,16 @@ nav ul.navigation {
     padding: 0;
 }
 
+/* Make link text visible and backgrounds transparent */
 nav ul.navigation li a {
-    text-decoration: none;
-    color: white; /* visible against primary-color header */
-    background-color: transparent; /* transparent by default */
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: transparent;
+  color: white; /* stays white so it's visible on dark header */
 }
 
+/* On hover: white background and dark text for contrast */
 nav ul.navigation li a:hover {
-    background-color: white;
-    color: var(--primary-color); /* contrast when hovered */
+  background-color: white;
+  color: var(--primary-color);
 }
 
 nav a {
