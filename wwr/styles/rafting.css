@@ -1,6 +1,5 @@
 /* Styles for About.html */
 
-
 :root {
     --primary-color: #3587a4; /* Blue (Munsell) */
     --secondary-color: #7fc6a4; /* Cambridge Blue */
@@ -31,14 +30,38 @@ h1, h2 {
     color: var(--primary-color);
 }
 
+/* Header Layout */
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 1rem;
 }
 
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+header img {
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+nav a {
+    background-color: white;
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: var(--accent2-color);
+    color: white;
 }
 
 .hero {
@@ -57,15 +80,14 @@ nav, p, section, article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.9; /* Modified opacity for aesthetics */
+    opacity: 0.9;
     background-color: var(--accent2-color);
-    color: #fff; /* white text; modify if not enough contrast */
+    color: #fff;
 }
 
 .hero article {
     position: absolute;
-    top: 343px; 
-/*    width: 100%; */ /* Decided to modify to left / right / margin: 0, because Width: 100%; looked a little ugly */
+    top: 343px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -73,14 +95,93 @@ nav, p, section, article {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff; /* white text; modify if not enough contrast */
+    color: #fff;
+    max-width: 80%;
 }
 
 .hero article img {
     float: right;
     width: 125px;
+    margin-left: 1rem;
+}
+
+/* History Section */
+section:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    gap: 2rem;
+}
+
+section:nth-of-type(1) img {
+    width: 200px;
+    height: auto;
+}
+
+/* Adventure Section */
+section:nth-of-type(2) {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+section:nth-of-type(2) h2 {
+    margin-bottom: 1rem;
+}
+
+section:nth-of-type(2) .adventures {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+section:nth-of-type(2) figure {
+    flex: 1 1 calc(20% - 1rem);
+    background-color: #eee;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+section:nth-of-type(2) img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin-left: 1rem;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 0.5rem;
+    margin-right: 1rem;
 }
 
 .socialmedia a {
     text-decoration: none;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: 40px;
 }
