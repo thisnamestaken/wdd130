@@ -84,6 +84,7 @@ nav a:hover {
     color: white;
 }
 
+/* Hero Section */
 .hero {
     position: relative;
 }
@@ -156,40 +157,49 @@ nav a:hover {
 }
 
 /* Adventure Section */
-section:nth-of-type(2) {
-    text-align: center;
-    padding: 2rem;
-    background-color: #fff;
+.adventures {
+  padding: 2rem;
+  background-color: #fff;
 }
 
-section:nth-of-type(2) h2 {
-    margin-bottom: 1rem;
+.adventures h2 {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-section:nth-of-type(2) .adventures {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
+.adventure-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-section:nth-of-type(2) figure {
-    flex: 1 1 calc(20% - 1rem);
-    background-color: #eee;
-    padding: 0.5rem;
-    border-radius: 5px;
+.adventure-gallery figure {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 calc(20% - 1rem); /* 5 items per row with spacing */
+  max-width: 200px;
+  margin: auto;
+  background-color: #f4f4f4;
+  padding: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-section:nth-of-type(2) img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+.adventure-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
 
-figcaption {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    color: #333;
+.adventure-gallery figcaption {
+  margin-top: 0.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  font: italic smaller sans-serif;
+  text-align: center;
+  padding: 0.3rem;
+  border-radius: 4px;
 }
 
 /* Footer */
