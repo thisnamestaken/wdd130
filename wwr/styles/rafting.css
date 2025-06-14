@@ -25,7 +25,12 @@ header, main, footer {
     margin: 0 auto;
 }
 
-h1, h2 {
+h1 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
@@ -118,6 +123,16 @@ nav a:hover {
     background-color: var(--accent1-color);
     color: #fff;
     max-width: 80%;
+}
+
+.hero article {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px; /* anchor near the bottom or adjust your top */
+  background-color: rgba(var(--accent1-color-rgb), 0.7);
+  padding: 16px;
+  text-align: center;
 }
 
 .hero article img {
