@@ -60,13 +60,11 @@ nav ul.navigation {
     padding: 0;
 }
 
-/* Make link text visible and backgrounds transparent */
 nav ul.navigation li a {
   background-color: transparent;
-  color: white; /* stays white so it's visible on dark header */
+  color: white; 
 }
 
-/* On hover: white background and dark text for contrast */
 nav ul.navigation li a:hover {
   background-color: white;
   color: var(--primary-color);
@@ -121,8 +119,6 @@ nav a:hover {
     max-width: 80%;
 }
 
-
-
 .hero article img {
     float: right;
     width: 125px;
@@ -130,18 +126,33 @@ nav a:hover {
 }
 
 /* History Section */
-section:nth-of-type(1) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.history {
     padding: 2rem;
     background-color: #f0f0f0;
+}
+
+.history h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.history-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 2rem;
 }
 
-section:nth-of-type(1) img {
+.history-content p {
+    flex: 1;
+    text-align: justify;
+}
+
+.history-content img {
     width: 200px;
     height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 /* Adventure Section */
