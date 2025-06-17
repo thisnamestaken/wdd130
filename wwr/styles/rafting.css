@@ -34,6 +34,13 @@ h3 {
   color: var(--accent2-color);
 }
 
+legend {
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
 /* Header Layout */
 header {
     display: grid;

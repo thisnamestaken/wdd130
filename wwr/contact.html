@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta name="description" content="Send a message to the staff of Splash White Water Rafting">
         <meta name="author" content="Thomas Payne">
-        <title>Contact Us</title>
+        <title>Contact Splash White Water Rafting</title>
         <link rel="stylesheet" href="styles/rafting.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,25 +63,32 @@
 
                     <form class="contact-form" action="#" method="post">
                         <fieldset>
-                            <h2>Send us a message</h2>
+                            <legend>Send us a message</legend>
                 
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="name" required>
                 
                             <label for="email">Email:</label>
                             <input type="email" id="email" name="email" required>
-                
+                            
                             <p>Purpose of Message:</p>
-                            <label><input type="radio" name="purpose" value="general"> General Inquiry</label><br>
-                            <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-                            <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                            <input type="radio" id="purpose-general" name="purpose" value="general">
+                            <label for="purpose-general">General Inquiry</label><br>
+                            
+                            <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                            <label for="purpose-reservation">Reservation Question</label><br>
+                            
+                            <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+                            <label for="purpose-suggestion">Website Suggestion</label>
+                            
                             
                             <label for="message">Tell us what you need here:</label>
                             <textarea id="message" name="message" rows="20" required></textarea>
                             
-                            <label><input type="checkbox" name="subscribe" value="yes"> Subscribe to the monthly newsletter</label>
+                            <input type="checkbox" id="monthly-newsletter" name="subscribe" value="yes"> 
+                            <label for="monthly-newsletter">Subscribe to the monthly newsletter</label>
                             
-                            <button type="submit">Submit</button>
+                            <button type="submit">Send</button>
                         </fieldset>
                     </form>
 
