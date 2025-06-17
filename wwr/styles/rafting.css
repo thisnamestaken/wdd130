@@ -1,4 +1,6 @@
-/* Styles for About.html */
+
+
+
 
 :root {
     --primary-color: #3587a4; /* Blue (Munsell) */
@@ -94,6 +96,38 @@ nav a:hover {
     background-color: var(--accent2-color);
     color: white;
 }
+
+
+/* Styles for Index.html */
+
+
+.index-hero {
+  position: relative;
+}
+
+.index-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.index-hero h1 {
+  position: absolute;
+  top: 20px;
+  left: 180px;
+  transform: translateX(-50%);
+  max-width: 400px;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: white;
+  color: var(--accent1-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Styles for About.html */
+
 
 /* Hero Section */
 .hero {
@@ -212,6 +246,15 @@ nav a:hover {
   padding: 0.3rem;
   border-radius: 4px;
 }
+
+
+/* Styles for Trips.html */
+
+
+
+
+/* Styles for Contact.html */
+
 
 /* Contact Section */
 .contact {
