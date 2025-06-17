@@ -178,6 +178,22 @@ nav a:hover {
   border: 1px solid #ccc;
 }
 
+.newsletter-signup h2 {
+  text-align: center;
+}
+
+.newsletter-signup input[type="text"],
+.newsletter-signup input[type="email"],
+.newsletter-signup button {
+  margin-bottom: 0.5rem;
+  /* space between each input/button stack */
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 400px;
+}
+
 .site-purpose {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
