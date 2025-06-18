@@ -359,28 +359,6 @@ nav a:hover {
   max-width: 310px;
 }
 
-.trip-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.trip-card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  padding: 1rem;
-  text-align: center;
-}
-
-.trip-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
 .cta-contact {
   background-color: var(--primary-color);
   color: white;
@@ -412,6 +390,28 @@ nav a:hover {
   margin-top: 2rem;
   margin-bottom: 1rem;
   text-align: center;
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.trip-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 1rem;
+  text-align: center;
+}
+
+.trip-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
 
 .trip-table-section {
