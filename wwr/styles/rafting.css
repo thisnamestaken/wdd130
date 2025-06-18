@@ -260,7 +260,7 @@ nav a:hover {
 
 /* History Section */
 .history {
-    padding: 2rem;
+    padding: 1.5rem;
     background-color: #f0f0f0;
 }
 
@@ -273,7 +273,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .history-content p {
@@ -337,8 +337,121 @@ nav a:hover {
 
 /* Styles for Trips.html */
 
+.trips-hero {
+  position: relative;
+}
 
+.trips-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
+.trips-hero h1 {
+  position: absolute;
+  top: 60%;
+  left: 20px;
+  background-color: var(--accent2-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 310px;
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.trip-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 1rem;
+  text-align: center;
+}
+
+.trip-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.cta-contact {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.cta-contact .cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent2-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.cta-contact .cta-button:hover {
+  background-color: var(--accent1-color);
+}
+
+.trip-descriptions {
+  background-color: #fff;
+}
+
+.trip-descriptions h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.trip-table-section {
+  padding: 2rem;
+  overflow-x: auto;
+}
+
+.trip-table-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.trip-table-section th,
+.trip-table-section td {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: left;
+}
+
+.trip-table-section th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.trip-card.custom-package {
+  border: 2px dashed var(--accent2-color);
+  background-color: #f9f9f9;
+}
+
+.trip-card.custom-package a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.trip-card.custom-package a:hover {
+  color: var(--accent2-color);
+}
 
 /* Styles for Contact.html */
 
